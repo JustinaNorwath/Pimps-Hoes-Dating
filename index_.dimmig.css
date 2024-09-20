@@ -1,0 +1,88 @@
+
+.item1 { grid-area: header;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: main;}
+.item4 { grid-area: item4; }
+
+#link-nav {height: 100%; width:100%; font-size: 0;}
+#left, #middle, #right, #leftleft {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 2rem;}
+#left {width: auto;} 
+
+#middle {width: 10%;}
+#midBtn{ width: 100%; height: 7rem;}
+#right {width: auto;}
+
+#right > a  { color: rgb(253, 250, 250); text-shadow: 2px 2px rgba(5, 5, 5, 0.516)}
+#left > a  { color: rgb(253, 250, 250);  text-shadow: 2px 2px rgb(5, 5, 5, 0.516); }
+#leftleft {width: 20%;}
+
+
+body{
+    background-image: url("Rose2.jpeg");
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  text-align: center;
+
+}
+
+
+
+h1{
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px rgb(2, 3, 0); 
+}
+
+.Description{
+  color: white;
+  text-shadow: 2px 2px rgb(2, 3, 0); 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+ 
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3rem;
+  font-size: 30px;
+}
+.item3{
+  color: black;
+  color: white;
+  text-shadow: 2px 2px rgb(2, 3, 0); 
+  }
+ 
+.button{
+  margin-bottom: 20px;
+  margin-top:auto;
+}
+
+#footer-item{
+  margin-left: 22%;
+  margin-right: 15%;
+  color: white;
+  text-shadow: 2px 2px rgb (2,3,0);
+/* background-color: rgb(61, 19, 12);*/
+  background-image: linear-gradient(to right, black, rgba(3, 39, 3, 0.938), rgb(78, 21, 21), rgba(3, 39, 3, 0.938), rgb(207, 110, 126) );
+}
+
+  /* Skapa en suddig kant på gradienten */
+  #footer-item{
+  mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+  }
+
+
+@media
